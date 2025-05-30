@@ -1,0 +1,114 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+@layer base {
+  :root {
+    --background: 170 10% 89%; /* Light desaturated teal #E3E7E6 */
+    --foreground: 185 10% 20%; /* Darker for text */
+
+    --muted: 170 10% 80%;
+    --muted-foreground: 185 10% 35%;
+
+    --popover: 170 10% 95%;
+    --popover-foreground: 185 10% 20%;
+
+    --card: 170 10% 95%;
+    --card-foreground: 185 10% 20%;
+
+    --border: 170 10% 75%;
+    --input: 170 10% 80%;
+
+    --primary: 185 22% 56%; /* Muted teal #73A9AD */
+    --primary-foreground: 0 0% 100%; /* White */
+
+    --secondary: 180 15% 70%; /* A slightly different shade of teal/grey */
+    --secondary-foreground: 185 10% 15%;
+
+    --accent: 121 22% 60%; /* Analogous blue-green #79B479 */
+    --accent-foreground: 0 0% 100%; /* White */
+
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+
+    --ring: 185 22% 50%; /* Ring color based on primary */
+    
+    --radius: 0.5rem;
+
+    --chart-1: 185 22% 56%; /* Primary */
+    --chart-2: 121 22% 60%; /* Accent */
+    --chart-3: 180 15% 65%; 
+    --chart-4: 200 20% 50%;
+    --chart-5: 150 20% 55%;
+
+    /* Sidebar specific theme variables */
+    --sidebar-background: 185 10% 20%; /* Darker for sidebar */
+    --sidebar-foreground: 170 10% 85%; /* Light text on dark sidebar */
+    --sidebar-primary: 185 22% 56%; /* Muted teal for sidebar primary elements */
+    --sidebar-primary-foreground: 0 0% 100%; /* White text on sidebar primary */
+    --sidebar-accent: 121 22% 60%; /* Analogous blue-green for sidebar accent */
+    --sidebar-accent-foreground: 0 0% 100%; /* White text on sidebar accent */
+    --sidebar-border: 185 10% 30%;
+    --sidebar-ring: 185 22% 50%;
+  }
+
+  .dark {
+    --background: 185 10% 15%; /* Dark background */
+    --foreground: 170 10% 85%; /* Light text */
+
+    --muted: 185 10% 25%;
+    --muted-foreground: 170 10% 70%;
+
+    --popover: 185 10% 10%;
+    --popover-foreground: 170 10% 85%;
+
+    --card: 185 10% 20%;
+    --card-foreground: 170 10% 85%;
+
+    --border: 185 10% 30%;
+    --input: 185 10% 25%;
+
+    --primary: 185 22% 50%; /* Muted teal for dark mode */
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 185 10% 30%;
+    --secondary-foreground: 0 0% 98%;
+
+    --accent: 121 22% 55%; /* Analogous blue-green for dark mode */
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 60% 50%;
+    --destructive-foreground: 0 0% 98%;
+
+    --ring: 185 22% 45%; /* Ring color for dark mode */
+
+    --chart-1: 185 22% 50%;
+    --chart-2: 121 22% 55%;
+    --chart-3: 180 15% 55%;
+    --chart-4: 200 20% 45%;
+    --chart-5: 150 20% 50%;
+
+    /* Dark Sidebar specific theme variables */
+    --sidebar-background: 185 10% 10%; /* Even darker for dark sidebar */
+    --sidebar-foreground: 170 10% 90%;
+    --sidebar-primary: 185 22% 50%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 121 22% 55%;
+    --sidebar-accent-foreground: 0 0% 98%;
+    --sidebar-border: 185 10% 20%;
+    --sidebar-ring: 185 22% 45%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

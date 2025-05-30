@@ -1,0 +1,207 @@
+
+import type { Language } from '@/types';
+
+export const translations = {
+  fa: {
+    appName: 'دخل و خرج',
+    user: 'کاربر',
+    welcome: 'خوش آمدید!',
+    welcomeMessage: 'برای شروع، لطفا نام و تنظیمات اولیه خود را وارد کنید.',
+    dashboardSubtitle: 'خلاصه ای از وضعیت مالی شما.',
+    yourName: 'نام شما',
+    yourNamePlaceholder: 'مثلا: علی رضایی',
+    preferredCurrency: 'ارز مورد استفاده',
+    preferredLanguage: 'زبان برنامه',
+    theme: 'پوسته برنامه',
+    calendarSystem: 'سیستم تقویم',
+    shamsi: 'شمسی',
+    gregorian: 'میلادی',
+    getStarted: 'شروع کنید',
+    dashboard: 'داشبورد',
+    incomeManagement: 'مدیریت درآمد',
+    expenseManagement: 'مدیریت خریدها',
+    financialReports: 'آمار مالی',
+    appSettings: 'تنظیمات برنامه',
+    totalIncome: 'مجموع درآمد',
+    totalExpenses: 'مجموع خریدها',
+    netBalance: 'مانده حساب',
+    addTransaction: 'افزودن تراکنش',
+    income: 'درآمد',
+    expense: 'هزینه',
+    amount: 'مبلغ',
+    frequency: 'دوره',
+    date: 'تاریخ',
+    description: 'توضیحات',
+    productName: 'نام محصول/خدمت',
+    category: 'دسته بندی',
+    save: 'ذخیره',
+    cancel: 'انصراف',
+    close: 'بستن',
+    settingsSaved: 'تنظیمات با موفقیت ذخیره شد.',
+    profile: 'پروفایل',
+    logout: 'خروج',
+    language: 'زبان',
+    currency: 'ارز',
+    requiredField: 'این فیلد اجباری است',
+    monthlySpending: 'هزینه های ماهانه',
+    monthlySpendingDesc: 'نمودار هزینه های شما در ۶ ماه گذشته.',
+    expenseCategories: 'دسته بندی هزینه ها',
+    expenseCategoriesDesc: 'نمایش توزیع هزینه ها بر اساس دسته بندی.',
+    millionLabel: ' م', // For millions in charts e.g. ۲ م for 2 million
+    viewAll: 'مشاهده همه',
+    recentTransactions: 'تراکنش های اخیر',
+    noTransactionsDashboard: 'هنوز تراکنشی ثبت نکرده‌اید. برای شروع، یک تراکنش جدید اضافه کنید.',
+    noTransactionsYet: 'هیچ تراکنشی برای نمایش وجود ندارد.',
+    addSomeTransactions: 'برای مشاهده لیست، ابتدا چند تراکنش ثبت کنید.',
+    light: 'روشن',
+    dark: 'تاریک',
+    addIncome: 'افزودن درآمد',
+    addExpense: 'افزودن هزینه',
+    incomeDetails: 'جزئیات درآمد',
+    expenseDetails: 'جزئیات هزینه',
+    selectDate: 'انتخاب تاریخ',
+    selectCurrency: 'انتخاب ارز',
+    selectLanguage: 'انتخاب زبان',
+    selectTheme: 'انتخاب پوسته',
+    selectFrequency: 'انتخاب دوره',
+    selectCategory: 'انتخاب دسته بندی',
+    incomeTitle: 'درآمد ها',
+    expenseTitle: 'هزینه ها',
+    reportsTitle: 'گزارشات',
+    settingsTitle: 'تنظیمات',
+    fillAllRequiredFields: 'لطفا تمامی فیلدهای ضروری را پر کنید.',
+    incomeAddedSuccessfully: 'درآمد با موفقیت ثبت شد.',
+    expenseAddedSuccessfully: 'هزینه با موفقیت ثبت شد.',
+    allTransactions: 'تمام تراکنش‌ها',
+    transactionList: 'لیست تراکنش‌ها',
+    transactionListDesc: 'در این بخش می‌توانید تمام تراکنش‌های ثبت شده خود را مشاهده و مدیریت کنید.',
+    actions: 'عملیات',
+    viewDescription: 'مشاهده توضیحات',
+    deleteTransaction: 'حذف تراکنش',
+    transactionDetails: 'جزئیات تراکنش',
+    confirmDeletion: 'تایید حذف',
+    confirmDeletionMessage: 'آیا از حذف تراکنش "{name}" مطمئن هستید؟ این عمل قابل بازگشت نیست.',
+    delete: 'حذف',
+    financialAnalysis: 'تحلیل وضعیت مالی',
+    expensesExceedIncome: 'هشدار: میزان هزینه های شما از درآمدتان بیشتر است! بهتر است هزینه های خود را بررسی کنید.',
+    incomeExceedsExpenses: 'تبریک! درآمد شما بیشتر از هزینه هایتان است. وضعیت مالی شما مطلوب به نظر می رسد.',
+    incomeEqualsExpenses: 'میزان درآمد و هزینه های شما تقریبا برابر است. مدیریت مالی خود را ادامه دهید.',
+  },
+  en: {
+    appName: 'Expense Tracker',
+    user: 'User',
+    welcome: 'Welcome!',
+    welcomeMessage: 'To get started, please enter your name and initial settings.',
+    dashboardSubtitle: 'Here is a summary of your financial status.',
+    yourName: 'Your Name',
+    yourNamePlaceholder: 'e.g., John Doe',
+    preferredCurrency: 'Preferred Currency',
+    preferredLanguage: 'App Language',
+    theme: 'App Theme',
+    calendarSystem: 'Calendar System',
+    shamsi: 'Shamsi (Persian)',
+    gregorian: 'Gregorian',
+    getStarted: 'Get Started',
+    dashboard: 'Dashboard',
+    incomeManagement: 'Income Management',
+    expenseManagement: 'Expense Management',
+    financialReports: 'Financial Reports',
+    appSettings: 'App Settings',
+    totalIncome: 'Total Income',
+    totalExpenses: 'Total Expenses',
+    netBalance: 'Net Balance',
+    addTransaction: 'Add Transaction',
+    income: 'Income',
+    expense: 'Expense',
+    amount: 'Amount',
+    frequency: 'Frequency',
+    date: 'Date',
+    description: 'Description',
+    productName: 'Product/Service Name',
+    category: 'Category',
+    save: 'Save',
+    cancel: 'Cancel',
+    close: 'Close',
+    settingsSaved: 'Settings saved successfully.',
+    profile: 'Profile',
+    logout: 'Logout',
+    language: 'Language',
+    currency: 'Currency',
+    requiredField: 'This field is required',
+    monthlySpending: 'Monthly Spending',
+    monthlySpendingDesc: 'Chart of your expenses over the last 6 months.',
+    expenseCategories: 'Expense Categories',
+    expenseCategoriesDesc: 'Distribution of expenses by category.',
+    millionLabel: 'M', // For millions in charts e.g. 2M for 2 million
+    viewAll: 'View All',
+    recentTransactions: 'Recent Transactions',
+    noTransactionsDashboard: 'You haven\'t recorded any transactions yet. Add a new transaction to get started.',
+    noTransactionsYet: 'No transactions to display.',
+    addSomeTransactions: 'Add some transactions to see them listed here.',
+    light: 'Light',
+    dark: 'Dark',
+    addIncome: 'Add Income',
+    addExpense: 'Add Expense',
+    incomeDetails: 'Income Details',
+    expenseDetails: 'Expense Details',
+    selectDate: 'Select Date',
+    selectCurrency: 'Select Currency',
+    selectLanguage: 'Select Language',
+    selectTheme: 'Select Theme',
+    selectFrequency: 'Select Frequency',
+    selectCategory: 'Select Category',
+    incomeTitle: 'Incomes',
+    expenseTitle: 'Expenses',
+    reportsTitle: 'Reports',
+    settingsTitle: 'Settings',
+    fillAllRequiredFields: 'Please fill all required fields.',
+    incomeAddedSuccessfully: 'Income added successfully.',
+    expenseAddedSuccessfully: 'Expense added successfully.',
+    allTransactions: 'All Transactions',
+    transactionList: 'Transaction List',
+    transactionListDesc: 'Here you can view and manage all your recorded transactions.',
+    actions: 'Actions',
+    viewDescription: 'View Description',
+    deleteTransaction: 'Delete Transaction',
+    transactionDetails: 'Transaction Details',
+    confirmDeletion: 'Confirm Deletion',
+    confirmDeletionMessage: 'Are you sure you want to delete the transaction "{name}"? This action cannot be undone.',
+    delete: 'Delete',
+    financialAnalysis: 'Financial Status Analysis',
+    expensesExceedIncome: 'Warning: Your expenses are greater than your income! It is advisable to review your spending.',
+    incomeExceedsExpenses: 'Congratulations! Your income is greater than your expenses. Your financial situation looks good.',
+    incomeEqualsExpenses: 'Your income and expenses are nearly equal. Continue managing your finances carefully.',
+  },
+};
+
+// Helper function to allow dynamic keys in t function for messages with placeholders
+type TranslationKeyWithPlaceholders =
+  | keyof typeof translations.fa
+  | 'confirmDeletionMessage';
+
+export type TranslationKey = keyof typeof translations.fa;
+
+export const getTranslations = (lang: Language) => translations[lang] || translations.fa;
+
+// Extend the useTranslation hook to handle placeholders
+// This function is not directly used by useTranslation hook below,
+// but it's kept here to show how it could be structured if imported elsewhere.
+export const useTranslationExtended = () => {
+  // This hook would need access to user preferences, typically via useUser()
+  // For simplicity, assuming preferences are fetched or passed here.
+  // const { preferences } = useUser();
+  const fakeLangPreference: Language = 'fa'; // Placeholder
+  const currentTranslations = translations[fakeLangPreference] || translations.fa;
+
+  const t = (key: TranslationKeyWithPlaceholders, params?: Record<string, string | number>): string => {
+    let translation = currentTranslations[key as TranslationKey] || translations.fa[key as TranslationKey] || String(key);
+    if (params) {
+      Object.keys(params).forEach(paramKey => {
+        translation = translation.replace(new RegExp(`{${paramKey}}`, 'g'), String(params[paramKey]));
+      });
+    }
+    return translation;
+  };
+
+  return { t, lang: fakeLangPreference };
+};
